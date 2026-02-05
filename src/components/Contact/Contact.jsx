@@ -14,8 +14,8 @@ export default function Contact() {
         <h2 className={styles.heading}>CONTACT</h2>
 
         {/* Replace with real email */}
-        <a href="mailto:hello@b24studios.dev" className={styles.email}>
-          hello@b24studios.dev
+        <a href="mailto:jackson@b24studios.dev" className={styles.email}>
+          jackson@b24studios.dev
         </a>
 
 <p className={styles.copy}>

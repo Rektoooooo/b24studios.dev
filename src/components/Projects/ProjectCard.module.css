@@ -148,12 +148,27 @@
   .odd {
     flex-direction: column;
     gap: var(--space-md);
-    align-items: flex-start;
+    align-items: center;
+  }
+
+  .even .info,
+  .odd .info {
+    text-align: center;
+  }
+
+  .even .description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .even .tech,
+  .odd .tech {
+    justify-content: center;
   }
 
   .iconCol {
     flex: none;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .screenshot {
@@ -173,5 +188,14 @@
 
   .description {
     max-width: 100%;
+  }
+
+  .screenshot img {
+    filter: grayscale(0%);
+  }
+
+  .downloadBtn {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

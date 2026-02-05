@@ -83,3 +83,9 @@
 .links a:hover {
   color: var(--text-primary);
 }
+
+@media (max-width: 768px) {
+  .photo {
+    filter: grayscale(0%);
+  }
+}

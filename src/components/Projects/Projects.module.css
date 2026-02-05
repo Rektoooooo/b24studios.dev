@@ -1,6 +1,5 @@
 .section {
-  min-height: 100vh;
-  padding: var(--space-2xl) var(--space-md);
+  padding: var(--space-xl) var(--space-md);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,5 +29,9 @@
 @media (max-width: 768px) {
   .section {
     padding: var(--space-xl) var(--space-sm);
+  }
+
+  .heading {
+    text-align: center;
   }
 }

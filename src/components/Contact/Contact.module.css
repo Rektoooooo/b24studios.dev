@@ -1,5 +1,5 @@
 .section {
-  padding: var(--space-xl) var(--space-md) var(--space-lg);
+  padding: var(--space-lg) var(--space-md) var(--space-md);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
   letter-spacing: var(--tracking-wider);
   color: var(--text-muted);
   text-transform: uppercase;
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
 }
 
 .email {
@@ -70,6 +70,6 @@
   }
 
   .section {
-    padding: var(--space-xl) var(--space-sm);
+    padding: var(--space-md) var(--space-sm) var(--space-sm);
   }
 }

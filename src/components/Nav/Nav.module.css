@@ -107,6 +107,19 @@
 
   .brand {
     font-size: var(--fs-xs);
+    flex: 0 0 auto;
+  }
+
+  .right {
+    flex: 0 0 auto;
+  }
+
+  .inner {
+    justify-content: space-between;
+  }
+
+  .brandLogo {
+    height: 18px;
   }
 
   .pill {
@@ -127,6 +140,12 @@
 
 @media (max-width: 480px) {
   .pill {
-    display: none;
+    gap: 0;
+    padding: 2px 3px;
+  }
+
+  .link {
+    font-size: 0.6rem;
+    padding: 4px 8px;
   }
 }
