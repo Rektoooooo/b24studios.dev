@@ -1,0 +1,64 @@
+.bracket {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-color: var(--text-muted);
+  border-style: solid;
+  border-width: 0;
+  z-index: 2;
+}
+
+.topLeft {
+  top: 24px;
+  left: 24px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+}
+
+.topRight {
+  top: 24px;
+  right: 24px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+}
+
+.bottomLeft {
+  bottom: 24px;
+  left: 24px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+
+.bottomRight {
+  bottom: 24px;
+  right: 24px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+
+@media (max-width: 768px) {
+  .bracket {
+    width: 24px;
+    height: 24px;
+  }
+
+  .topLeft {
+    top: 16px;
+    left: 16px;
+  }
+
+  .topRight {
+    top: 16px;
+    right: 16px;
+  }
+
+  .bottomLeft {
+    bottom: 16px;
+    left: 16px;
+  }
+
+  .bottomRight {
+    bottom: 16px;
+    right: 16px;
+  }
+}

@@ -1,0 +1,132 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 16px 32px;
+  transition: background 0.3s ease, border-color 0.3s ease, padding 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.scrolled {
+  background: rgba(15, 15, 15, 0.85);
+  backdrop-filter: var(--blur-backdrop);
+  -webkit-backdrop-filter: var(--blur-backdrop);
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+  padding: 12px 32px;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand — left */
+.brand {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.brandLogo {
+  height: 24px;
+  width: auto;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.brand:hover .brandLogo {
+  opacity: 1;
+}
+
+/* Center pill */
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 4px 6px;
+}
+
+.link {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  padding: 6px 16px;
+  border-radius: 999px;
+  transition: color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Contact button — right */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contactBtn {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.04em;
+  color: var(--bg-primary);
+  background: var(--text-primary);
+  padding: 8px 20px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.contactBtn:hover {
+  background: #fff;
+  color: var(--bg-primary);
+  transform: translateY(-1px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav {
+    padding: 12px 16px;
+  }
+
+  .scrolled {
+    padding: 10px 16px;
+  }
+
+  .brand {
+    font-size: var(--fs-xs);
+  }
+
+  .pill {
+    gap: 2px;
+    padding: 3px 4px;
+  }
+
+  .link {
+    font-size: 0.65rem;
+    padding: 5px 10px;
+  }
+
+  .contactBtn {
+    font-size: 0.65rem;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pill {
+    display: none;
+  }
+}
