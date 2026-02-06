@@ -61,6 +61,10 @@
 }
 
 @media (max-width: 768px) {
+  .content {
+    margin-bottom: 15vh;
+  }
+
   .logo {
     width: 60px;
     height: 60px;

@@ -78,6 +78,9 @@
 }
 
 .contactBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   letter-spacing: 0.04em;
@@ -95,6 +98,14 @@
   transform: translateY(-1px);
 }
 
+.contactIcon {
+  display: none;
+}
+
+.contactLabel {
+  display: inline;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .nav {
@@ -107,15 +118,13 @@
 
   .brand {
     font-size: var(--fs-xs);
-    flex: 0 0 auto;
+    flex: 1;
+    min-width: 0;
   }
 
   .right {
-    flex: 0 0 auto;
-  }
-
-  .inner {
-    justify-content: space-between;
+    flex: 1;
+    min-width: 0;
   }
 
   .brandLogo {
@@ -132,9 +141,21 @@
     padding: 5px 10px;
   }
 
+  .contactLabel {
+    display: none;
+  }
+
+  .contactIcon {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
   .contactBtn {
-    font-size: 0.65rem;
-    padding: 6px 14px;
+    width: 46px;
+    height: 28px;
+    padding: 0;
+    border-radius: 6px;
   }
 }
 

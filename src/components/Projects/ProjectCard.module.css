@@ -156,7 +156,8 @@
     text-align: center;
   }
 
-  .even .description {
+  .even .description,
+  .odd .description {
     margin-left: auto;
     margin-right: auto;
   }
